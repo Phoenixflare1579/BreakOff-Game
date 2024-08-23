@@ -11,8 +11,11 @@ public class Swap : MonoBehaviour
         target = GameObject.FindGameObjectsWithTag("Red");
         for (int i = 0; i < target.Length; i++)
         {
-            target[i] = replacement;
+            Instantiate(replacement, target[i].transform.parent);
+        }
+        for (int i = 0; i < target.Length; i++)
+        {
+            Destroy(target[i]);
         }
     }
-
 }
