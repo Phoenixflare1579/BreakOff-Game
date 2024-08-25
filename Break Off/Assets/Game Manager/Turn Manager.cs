@@ -9,17 +9,23 @@ public class TurnManager : MonoBehaviour
     Vector2 lastDirection;
     public GameObject piece;
     public GameObject options;
+    public bool isCancel;
 
     void Start()
     {
         options = GameObject.FindGameObjectWithTag("Player");
     }
 
-    void Update()
+    void Update() //sets up movement on turn
     {
         if (!isTurn) { return; }
         Vector3 newPosition = new Vector3(piece.transform.position.x + 1.1f * lastDirection.x, piece.transform.position.y + 1.1f * lastDirection.y, 0);
         piece.transform.position = newPosition;
+        if (isCancel)
+        {
+            options.SetActive(isCancel);
+            isCancel = false;
+        }
     }
 
     public void Move(InputAction.CallbackContext c)
@@ -38,7 +44,7 @@ public class TurnManager : MonoBehaviour
     {
         if(c.performed)
         {
-            options.SetActive(true);
+            isCancel = true;
         }
     }
 

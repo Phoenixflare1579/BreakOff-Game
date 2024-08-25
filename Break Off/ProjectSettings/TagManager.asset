@@ -15,6 +15,7 @@ TagManager:
   - Orange
   - Green
   - Blue
+  - Piece
   layers:
   - Default
   - TransparentFX
