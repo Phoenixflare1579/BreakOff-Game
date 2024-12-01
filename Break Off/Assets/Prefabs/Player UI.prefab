@@ -566,6 +566,7 @@ GameObject:
   - component: {fileID: 798299656997688258}
   - component: {fileID: 4358195129419327547}
   - component: {fileID: 5861005715682082422}
+  - component: {fileID: 6912856171567980230}
   m_Layer: 5
   m_Name: Player UI
   m_TagString: Untagged
@@ -646,7 +647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 0
+  GlobalObjectIdHash: 1848238712
   InScenePlacedSourceGlobalObjectIdHash: 0
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
@@ -655,6 +656,18 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+--- !u!114 &6912856171567980230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5964862269015937628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42418ffa8427ecf418f2629286ed3d22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7983632177973514083
 GameObject:
   m_ObjectHideFlags: 0
